@@ -93,6 +93,7 @@ func main() {
 }
 
 func listen() {
+	<- start
 	for {
 		select {
 		case ipa := <-tocheck:
